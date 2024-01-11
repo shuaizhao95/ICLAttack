@@ -1,0 +1,10 @@
+
+CUDA_VISIBLE_DEVICES=1,2,3,4,5,6 accelerate launch --main_process_port 29528 --config_file run.yaml context_learning.py --model facebook/opt-1.3b
+CUDA_VISIBLE_DEVICES=1,2,3,4,5,6 accelerate launch --main_process_port 29528 --config_file run.yaml attack_clean_sentence.py --model facebook/opt-1.3b
+CUDA_VISIBLE_DEVICES=1,2,3,4,5,6 accelerate launch --main_process_port 29528 --config_file run.yaml attack_sentence.py --model facebook/opt-1.3b
+CUDA_VISIBLE_DEVICES=1,2,3,4,5,6 accelerate launch --main_process_port 29528 --config_file run.yaml attack_clean_prompt.py --model facebook/opt-1.3b
+CUDA_VISIBLE_DEVICES=1,2,3,4,5,6 accelerate launch --main_process_port 29528 --config_file run.yaml attack_prompt.py --model facebook/opt-1.3b
+
+
+
+
