@@ -6,7 +6,7 @@ Universal Vulnerabilities in Large Language Models: In-context Learning Backdoor
 * openprompt==1.0.1
 * transformers==4.35.2
 
-## In-context Learning Backdoor Attack
+## An example for OPT-1.3B based on ICLAttack.
 
 ```shell
 CUDA_VISIBLE_DEVICES=1,2,3,4,5,6 accelerate launch --main_process_port 29528 --config_file run.yaml context_learning.py --model facebook/opt-1.3b
